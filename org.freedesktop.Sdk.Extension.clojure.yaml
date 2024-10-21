@@ -1,0 +1,31 @@
+id: org.freedesktop.Sdk.Extension.clojure
+name: Clojure
+branch: '23.08'
+runtime: org.freedesktop.Sdk
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+build-extension: true
+separate-locales: false
+appstream-compose: false
+modules:
+  - name: clojure
+    buildsystem: simple
+    build-options:
+      build-args:
+        - --share=network
+    sources:
+      - type: file
+        url: https://github.com/clojure/brew-install/releases/download/1.11.2.1446/linux-install.sh
+        sha256: f9ec75edd10dd734f67b72a10e54aa5e77ea1fbdc2c2f852feb4fc1ad5ca8ce5
+    build-commands:
+      - chmod +x linux-install.sh
+      - ./linux-install.sh --prefix /usr/lib/sdk/clojure
+  - name: scripts
+    buildsystem: simple
+    sources:
+      - type: script
+        commands:
+          - export PATH=$PATH:/usr/lib/sdk/clojure/bin
+        dest-filename: enable.sh
+    build-commands:
+      - cp enable.sh /usr/lib/sdk/clojure
