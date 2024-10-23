@@ -7,7 +7,6 @@ runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 build-extension: true
 separate-locales: false
-appstream-compose: false
 modules:
   - name: clojure
     buildsystem: simple
