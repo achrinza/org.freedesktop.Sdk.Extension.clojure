@@ -7,4 +7,5 @@ repo
 
 # Code editors
 *~
-
+.*.swp
+\#*#

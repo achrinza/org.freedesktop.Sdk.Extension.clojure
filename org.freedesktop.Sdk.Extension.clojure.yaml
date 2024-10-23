@@ -43,3 +43,10 @@ modules:
     build-commands:
       - sed -i -e 's@BINDIR@'"$bin_dir"'@g' enable.sh
       - install -Dm755 enable.sh "$FLATPAK_DEST"
+  - name: metainfo
+    buildsystem: simple
+    sources:
+      - type: file
+        path: org.freedesktop.Sdk.Extension.clojure.metainfo.xml
+    build-commands:
+      - install -Dm644 org.freedesktop.Sdk.Extension.clojure.metainfo.xml ${FLATPAK_DEST}/share/metainfo
