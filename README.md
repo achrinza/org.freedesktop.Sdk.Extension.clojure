@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: FSFAP -->
+
 # Flatpak SDK Extension for Clojure
 
 To build and install it:
@@ -18,5 +20,5 @@ $ flatpak --user run org.flatpak.Builder \
 
 ## License
 
-[FSAP](./LICENSES/FSAP)
+[FSFAP](./LICENSES/FSFAP)
 

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: FSFAP
 id: org.freedesktop.Sdk.Extension.clojure
 name: Clojure
 branch: "23.08"

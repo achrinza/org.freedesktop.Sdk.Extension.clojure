@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: FSFAP -->
+<component type="runtime">
+  <id>org.freedesktop.Sdk.Extension.clojure</id>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>EPL-1.0</project_license>
+  <name>Clojure SDK Extension</name>
+  <summary>The stable version of Clojure tools</summary>
+  <description>
+    <p>
+      This SDK extension allows the building and running of Clojure-based applications.
+    </p>
+  </description>
+  <url type="homepage">https://clojure.org/</url>
+  <url type="bugtracker">https://clojure.atlassian.net/jira/software/c/projects/CLJ/issues/</url>
+  <developer id="com.achrinza.rifa">
+    <name>Rifa Achrinza</name>
+  </developer>
+  <update_contact>rifa_at_achrinza.com</update_contact>
+</component>
