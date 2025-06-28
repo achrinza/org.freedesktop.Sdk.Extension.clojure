@@ -13,8 +13,4 @@
   </description>
   <url type="homepage">https://clojure.org/</url>
   <url type="bugtracker">https://clojure.atlassian.net/jira/software/c/projects/CLJ/issues/</url>
-  <developer id="com.achrinza.rifa">
-    <name>Rifa Achrinza</name>
-  </developer>
-  <update_contact>rifa_at_achrinza.com</update_contact>
 </component>
